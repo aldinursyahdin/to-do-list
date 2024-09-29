@@ -7,13 +7,13 @@ const Heading = () => {
   const [hiddenComponent, setHiddenComponent] = useState(true)
   const [error, setError] = useState(false)
   const [todos, setTodos] = useState<TodoTypes[]>(TodoService.getTodos())
- const [showModal, setShowModal] = useState<boolean>(false)
+  const [showModal, setShowModal] = useState<boolean>(false)
 
- function toggleModal() {
-   setShowModal(!showModal)
- }
+  function toggleModal() {
+    setShowModal(!showModal)
+  }
 
-//delete all todo
+  //delete all todo
   const handleDeleteAllTodo = () => {
     TodoService.deleteAllTodos()
     window.location.reload()
@@ -39,8 +39,6 @@ const Heading = () => {
     }
   }
 
-  
- 
   const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     setNewTodoText(event.target.value)
   }
