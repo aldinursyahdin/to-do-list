@@ -1,5 +1,5 @@
 import { useState } from "react"
-import TodoTypes from "../todo"
+import TodoTypes from "../Todo"
 import TodoService from "../TodoService"
 import Modal from "./Modal"
 
