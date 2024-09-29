@@ -35,6 +35,7 @@ const Heading = () => {
       setHiddenComponent((prev) => !prev)
       setNewTodoText("")
       setError(false)
+      console.log(todos)
       window.location.reload()
     }
   }
