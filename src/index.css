@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input:focus {
+  outline: none; /* Remove the default outline */
+  border: none; /* Remove the border */
+}
+
+textarea:focus {
+  outline: none; /* Remove the default outline */
+  border: none; /* Remove the border */
+}
+
+textarea {
+  resize: none;
+  overflow: hidden;
+  overflow-y: scroll; 
+}
+textarea::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
