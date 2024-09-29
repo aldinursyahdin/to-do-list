@@ -20,3 +20,16 @@ textarea {
 textarea::-webkit-scrollbar {
     display: none; /* For Chrome, Safari, and Opera */
 }
+
+.slide-up {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+  opacity: 0;
+}
+
+.slide-down {
+  max-height: 200px; 
+  transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
+  opacity: 1;
+}

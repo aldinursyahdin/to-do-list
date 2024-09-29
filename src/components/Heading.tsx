@@ -68,7 +68,7 @@ const Heading = () => {
           </button>
         </div>
       </div>
-      <div className={`${hiddenComponent ? "hidden" : ""}`}>
+      <div className={`transition-all duration-500 ${hiddenComponent ? "slide-up" : "slide-down"}`}>
         <div className="flex justify-between w-full my-5 mb-12">
           <div className="flex flex-col items-start w-full h-[36px]">
             <div className="flex items-center w-full h-full py-[10px]  ">
